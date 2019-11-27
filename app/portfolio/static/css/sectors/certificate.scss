@@ -1,0 +1,12 @@
+#certificate{
+  background: $certificate_background;
+
+  .left{
+    padding-right: 1.6em;
+  }
+
+  .sector{
+    width: fit-content;
+    margin: auto;
+  }
+}

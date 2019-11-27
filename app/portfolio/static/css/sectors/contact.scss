@@ -1,0 +1,27 @@
+#contact{
+  background: $contact_background;
+  border-top: 1px solid $border_contact;
+  border-bottom: 1px solid $border_contact;
+
+  .left{
+    padding-right: 1.6em;
+  }
+
+  .sector{
+    width: fit-content;
+    margin: auto;
+  }
+
+  .fb{
+    display: flex;
+    font-size: 1.2em;
+  }
+
+  .fb:hover{
+    color: rgb(49, 113, 170);
+  }
+
+  .facebook.icon{
+    color: rgb(2, 2, 172);
+  }
+}

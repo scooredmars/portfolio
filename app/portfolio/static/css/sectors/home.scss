@@ -1,0 +1,44 @@
+.home-page{
+  height: 100vh;
+  background-color: $home_background;
+}
+
+.card{
+  margin: auto;
+  width: fit-content;
+  padding-top: 11em;
+}
+
+.name{
+  padding-bottom: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.description{
+  padding-top: .8em;
+  font-size: 1.1em;
+}
+
+.github.icon{
+  font-size: 1.3em;
+}
+
+.ui.bottom.attached.label{
+  font-size: 2em;
+  background: $home_bottom_background;
+  color: $home_color;
+  text-align: center;
+}
+
+.gh{
+  color: $navbar_link;
+  font-size: 1.4em;
+}
+
+.gh:hover{
+  color: rgb(99, 99, 99);
+}
+
+.arrow.circle.down.icon{
+  font-size: 1.4em;
+}

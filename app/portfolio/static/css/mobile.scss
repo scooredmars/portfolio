@@ -1,0 +1,75 @@
+@media only screen and (max-width: 600px) {
+  #contact{
+    .topic{
+      width: 46%;
+    }
+
+    .list {
+      display: block;
+    }
+
+    .list:nth-child(2){
+      padding-left: 1em;
+    }
+
+    .sector{
+      width: 85% !important;
+    }
+  }
+
+  #projects{
+    .topic{
+      width: 46%;
+    }
+
+    .ui.card .meta *, .ui.cards>.card .meta * {
+      margin-bottom: .4em;
+    }
+
+    .description{
+      font-size: .9em;
+    }
+  }
+
+  #certificate{
+    .topic{
+      width: 46%;
+    }
+
+    .list{
+      display: block;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .sector{
+      width: 91% !important;
+    }
+  }
+
+  #skills{
+    .topic{
+      width: 46%;
+    }
+
+    .list{
+      display: block;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .sector{
+      width: fit-content !important;
+    }
+
+    .left{
+      padding-left: 0 !important;
+    }
+
+    .right{
+      display: flex;
+    }
+  }
+}
+
+

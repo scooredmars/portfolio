@@ -1,0 +1,47 @@
+{% spaceless %}
+
+{% load i18n static compress %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<html lang="{{ LANGUAGE_CODE }}">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.7/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.7/dist/semantic.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+    </script>
+
+    {% compress css %}
+      <link rel="stylesheet" type="text/x-scss" href="{% static 'css/base.scss' %}">
+    {% endcompress %}
+
+  </head>
+
+  <body>
+    {% block navbar %}
+      {% include "portfolio/layouts/navbar.html" %}
+    {% endblock %}
+    {% block home %}{% include "portfolio/home.html" %}{% endblock %}
+    {% block skills %}{% include "portfolio/skills.html" %}{% endblock %}
+    {% block certificate %}{% include "portfolio/certificate.html" %}{% endblock %}
+    {% block projects %}{% include "portfolio/projects.html" %}{% endblock %}
+    {% block contact %}{% include "portfolio/contact.html" %}{% endblock %}
+    {% block footer %}{% include "portfolio/layouts/footer.html" %}{% endblock %}
+  </body>
+
+</html>
+{% endspaceless %}

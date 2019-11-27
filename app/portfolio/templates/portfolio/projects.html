@@ -1,0 +1,66 @@
+{% load static %}
+
+{% block projects %}
+
+<div id="projects">
+  <div class="topic">Projekty</div>
+  <div class="ui cards">
+
+{% for portfolio in Portfolio %}
+  <div class="card">
+    <div class="ui fluid image">
+      <div class="ui black ribbon label">
+      {% if portfolio.in_que %}
+        <i class="calendar alternate outline icon"></i> Oczekuje w kolejce
+      {% else %}
+        <i class="spinner icon"></i> W trakcie tworzenia
+      {% endif %}
+      </div>
+      {% if portfolio.image.url %}
+        <div class="image">
+          <img src="{{ portfolio.image.url }}">
+        </div>
+      {% else %}
+        <div class="ui placeholder">
+          <div class="square image"></div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="content">
+      <div class="header center">{{ portfolio.title }}</div>
+      <div class="meta center">
+        {% if portfolio.gh_not_link %}
+          <button class="negative ui button">Brak GitHub</button>
+        {% else %}
+        <a href="{{ portfolio.gh_link|default_if_none:"" }}" target="_blank" rel="noopener noreferrer">
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content black_link">GitHub</div>
+            <div class="hidden content">
+              <i class="github icon"></i>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+        {% if portfolio.in_progress %}
+          <button class="negative ui button">Brak Podglądu strony</button>
+        {% else %}
+        <a href="{{ portfolio.web|default_if_none:"" }}" target="_blank" rel="noopener noreferrer">
+          <div class="ui animated green button" tabindex="0">
+            <div class="visible content">Podgląd strony</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+      </div>
+      <div class="description">
+        {{ portfolio.text|linebreaksbr }}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+</div>
+</div>
+{% endblock %}

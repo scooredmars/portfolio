@@ -1,0 +1,256 @@
+@media only screen and (max-width: 600px) {
+  /* line 2, app/portfolio/static/css/mobile.scss */
+  #navbar {
+    display: block !important;
+    position: absolute !important;
+    background: rgba(255, 255, 255, 0) !important; }
+  /* line 9, app/portfolio/static/css/mobile.scss */
+  #contact .topic {
+    width: 46%; }
+  /* line 13, app/portfolio/static/css/mobile.scss */
+  #contact .list {
+    display: block; }
+  /* line 17, app/portfolio/static/css/mobile.scss */
+  #contact .list:nth-child(2) {
+    padding-left: 1em; }
+  /* line 21, app/portfolio/static/css/mobile.scss */
+  #contact .sector {
+    width: 85% !important; }
+  /* line 27, app/portfolio/static/css/mobile.scss */
+  #projects .topic {
+    width: 46%; }
+  /* line 31, app/portfolio/static/css/mobile.scss */
+  #projects .ui.card .meta *, #projects .ui.cards > .card .meta * {
+    margin-bottom: .4em; }
+  /* line 35, app/portfolio/static/css/mobile.scss */
+  #projects .description {
+    font-size: .9em; }
+  /* line 41, app/portfolio/static/css/mobile.scss */
+  #certificate .topic {
+    width: 46%; }
+  /* line 45, app/portfolio/static/css/mobile.scss */
+  #certificate .list {
+    display: block;
+    padding: 1em;
+    text-align: center; }
+  /* line 51, app/portfolio/static/css/mobile.scss */
+  #certificate .sector {
+    width: 91% !important; }
+  /* line 57, app/portfolio/static/css/mobile.scss */
+  #skills .topic {
+    width: 46%; }
+  /* line 61, app/portfolio/static/css/mobile.scss */
+  #skills .list {
+    display: block;
+    padding: 1em;
+    text-align: center; }
+  /* line 67, app/portfolio/static/css/mobile.scss */
+  #skills .sector {
+    width: fit-content !important; }
+  /* line 71, app/portfolio/static/css/mobile.scss */
+  #skills .left {
+    padding-left: 0 !important; }
+  /* line 75, app/portfolio/static/css/mobile.scss */
+  #skills .right {
+    display: flex; } }
+
+/* line 1, app/portfolio/static/css/includes/navbar.scss */
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-top: .6em;
+  padding-bottom: .5em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: top 0.3s;
+  background: rgba(141, 171, 177, 0.74); }
+
+/* line 15, app/portfolio/static/css/includes/navbar.scss */
+.space {
+  width: 62%; }
+
+/* line 19, app/portfolio/static/css/includes/navbar.scss */
+.tab {
+  width: auto;
+  text-align: center; }
+
+/* line 24, app/portfolio/static/css/includes/navbar.scss */
+a {
+  color: black;
+  text-decoration: none; }
+
+/* line 1, app/portfolio/static/css/includes/footer.scss */
+.column {
+  display: flex;
+  margin: auto;
+  width: fit-content; }
+  /* line 6, app/portfolio/static/css/includes/footer.scss */
+  .column .cont {
+    width: 6.5em;
+    text-align: center;
+    font-size: 1.25em; }
+
+/* line 13, app/portfolio/static/css/includes/footer.scss */
+.footer {
+  clear: both;
+  position: relative;
+  background: #d4d4d4;
+  padding: .2em; }
+
+/* line 1, app/portfolio/static/css/sectors/home.scss */
+.home-page {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.397); }
+
+/* line 6, app/portfolio/static/css/sectors/home.scss */
+.card {
+  margin: auto;
+  width: fit-content;
+  padding-top: 11em; }
+
+/* line 12, app/portfolio/static/css/sectors/home.scss */
+.name {
+  padding-bottom: 1em;
+  color: black; }
+
+/* line 17, app/portfolio/static/css/sectors/home.scss */
+.description {
+  padding-top: .8em;
+  font-size: 1.1em; }
+
+/* line 22, app/portfolio/static/css/sectors/home.scss */
+.github.icon {
+  font-size: 1.3em; }
+
+/* line 26, app/portfolio/static/css/sectors/home.scss */
+.ui.bottom.attached.label {
+  font-size: 2em;
+  background: rgba(255, 255, 255, 0);
+  color: black;
+  text-align: center; }
+
+/* line 1, app/portfolio/static/css/sectors/skills.scss */
+#skills {
+  background: rgba(241, 241, 241, 0.982);
+  border-bottom: 1px solid rgba(65, 63, 63, 0.301);
+  border-top: 1px solid rgba(65, 63, 63, 0.301); }
+  /* line 6, app/portfolio/static/css/sectors/skills.scss */
+  #skills .minus {
+    color: rgba(119, 114, 114, 0.582); }
+  /* line 10, app/portfolio/static/css/sectors/skills.scss */
+  #skills img {
+    width: 3em;
+    height: 3em; }
+  /* line 15, app/portfolio/static/css/sectors/skills.scss */
+  #skills .left {
+    padding-left: 10em;
+    padding-right: 1.6em; }
+  /* line 20, app/portfolio/static/css/sectors/skills.scss */
+  #skills .sector {
+    width: 45%;
+    margin: auto; }
+
+/* line 1, app/portfolio/static/css/sectors/certificate.scss */
+#certificate {
+  background: rgba(224, 221, 221, 0.973); }
+  /* line 4, app/portfolio/static/css/sectors/certificate.scss */
+  #certificate .left {
+    padding-right: 1.6em; }
+  /* line 8, app/portfolio/static/css/sectors/certificate.scss */
+  #certificate .sector {
+    width: fit-content;
+    margin: auto; }
+
+/* line 1, app/portfolio/static/css/sectors/projects.scss */
+#projects {
+  background: rgba(241, 241, 241, 0.982);
+  border-bottom: 1px solid rgba(65, 63, 63, 0.301);
+  border-top: 1px solid rgba(65, 63, 63, 0.301); }
+  /* line 6, app/portfolio/static/css/sectors/projects.scss */
+  #projects .ui.cards {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 0; }
+  /* line 15, app/portfolio/static/css/sectors/projects.scss */
+  #projects .ui.card:after, #projects .ui.cards:after {
+    content: none; }
+  /* line 19, app/portfolio/static/css/sectors/projects.scss */
+  #projects .description {
+    text-align: center;
+    font-size: 1em; }
+  /* line 23, app/portfolio/static/css/sectors/projects.scss */
+  #projects .header {
+    padding-bottom: .3em; }
+  /* line 27, app/portfolio/static/css/sectors/projects.scss */
+  #projects .working {
+    text-decoration: line-through;
+    color: red; }
+  /* line 32, app/portfolio/static/css/sectors/projects.scss */
+  #projects img {
+    height: 11em; }
+  /* line 36, app/portfolio/static/css/sectors/projects.scss */
+  #projects .ui.black.ribbon.label {
+    font-family: monospace;
+    background-color: crimson;
+    border-color: #1b1c1de0; }
+
+/* line 1, app/portfolio/static/css/sectors/contact.scss */
+#contact {
+  background: rgba(224, 221, 221, 0.973);
+  border-top: 1px solid rgba(65, 63, 63, 0.301);
+  border-bottom: 1px solid rgba(65, 63, 63, 0.301); }
+  /* line 6, app/portfolio/static/css/sectors/contact.scss */
+  #contact .left {
+    padding-right: 1.6em; }
+  /* line 10, app/portfolio/static/css/sectors/contact.scss */
+  #contact .sector {
+    width: fit-content;
+    margin: auto; }
+  /* line 15, app/portfolio/static/css/sectors/contact.scss */
+  #contact .fb {
+    display: flex; }
+
+/* line 11, app/portfolio/static/css/base.scss */
+body {
+  background-image: url(/static/img/tlo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em; }
+
+/* line 20, app/portfolio/static/css/base.scss */
+::-webkit-scrollbar {
+  display: none; }
+
+/* line 24, app/portfolio/static/css/base.scss */
+.center {
+  margin: auto;
+  text-align: center; }
+
+/* line 30, app/portfolio/static/css/base.scss */
+.topic {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: .8em;
+  padding-bottom: .6em;
+  border-bottom: 2px solid black;
+  width: 11%; }
+
+/* line 40, app/portfolio/static/css/base.scss */
+.list {
+  display: flex;
+  width: 100%;
+  padding-top: 3em; }
+
+/* line 46, app/portfolio/static/css/base.scss */
+.item {
+  padding-bottom: 1.8em;
+  display: flex; }

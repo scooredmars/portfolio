@@ -1,0 +1,62 @@
+#projects{
+  background: $projects_background;
+  border-bottom: 1px solid $projects_border;
+  border-top: 1px solid $projects_border;
+
+  .ui.cards{
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 0;
+  }
+
+  .content{
+    padding: .7em .48em;
+  }
+
+  .ui.card:after, .ui.cards:after{
+    content: none;
+  }
+
+  .description{
+    text-align: center;
+    font-size: 1em;
+  }
+  .header{
+    padding-bottom: .3em;
+  }
+
+  .working{
+    text-decoration: line-through;
+    color: rgb(255, 0, 0);
+  }
+
+  img{
+    height:11em;
+  }
+
+  .ui.black.ribbon.label{
+    font-family: monospace;
+    background-color: crimson;
+    border-color: #1b1c1de0;
+  }
+
+  .negative.ui.button,.ui.animated.button{
+    padding: .8em;
+  }
+
+  .visible.content{
+    margin-right: .8em;
+    padding: 0 .8em;
+  }
+
+  .hidden.content{
+    top: 26%;
+  }
+
+  .black_link{
+    color: black;
+  }
+}

@@ -1,0 +1,24 @@
+#skills{
+  background: $skills_background;
+  border-bottom: 1px solid $skills_border;
+  border-top: 1px solid $skills_border;
+
+  .minus{
+    color: $skills_minus;
+  }
+
+  img{
+    width: 3em;
+    height: 3em;
+  }
+
+  .left{
+    padding-left: 10em;
+    padding-right: 1.6em;
+  }
+
+  .sector{
+    width: 45%;
+    margin: auto;
+  }
+}
